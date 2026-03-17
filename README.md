@@ -3,7 +3,6 @@
 ## Disciplinas
 Atualmente, este repositório contém os submódulos para as seguintes disciplinas:
 - [ELT-015: Laboratório de Controle e Automação II](./lab2/)
-- [ELE-041: Manipuladores Robóticos](./manipuladores_roboticos/)
 
 ## Configuração do Ambiente de Desenvolvimento
 
