@@ -1,0 +1,15 @@
+{
+    "name": "Semestre 2026/1 - LaTeX e Python",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "James-Yu.latex-workshop"
+            ]
+        }
+    },
+    "postCreateCommand": "python3 -m venv ./lab2/.venv && ./lab2/.venv/bin/pip install --upgrade pip && ./lab2/.venv/bin/pip install -r ./lab2/requirements.txt && python3 -m venv ./manipuladores_roboticos/.venv && ./manipuladores_roboticos/.venv/bin/pip install --upgrade pip && ./manipuladores_roboticos/.venv/bin/pip install -r ./manipuladores_roboticos/requirements.txt"
+}
