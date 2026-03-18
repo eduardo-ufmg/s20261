@@ -11,5 +11,14 @@
             ]
         }
     },
-    "postCreateCommand": "python3 -m venv ./lab2/.venv && ./lab2/.venv/bin/pip install --upgrade pip && ./lab2/.venv/bin/pip install -r ./lab2/requirements.txt && python3 -m venv ./manipuladores_roboticos/.venv && ./manipuladores_roboticos/.venv/bin/pip install --upgrade pip && ./manipuladores_roboticos/.venv/bin/pip install -r ./manipuladores_roboticos/requirements.txt"
+    "postCreateCommand": [
+        "git submodule add https://github.com/eduardo-ufmg/lab2.git",
+        "git submodule add https://github.com/eduardo-ufmg/manipuladores_roboticos.git",
+        "git submodule init --recursive",
+        "git submodule update --recursive",
+        "python3 -m venv ./lab2/.venv",
+        "source ./lab2/.venv/bin/activate && pip install --upgrade pip && pip install -r ./lab2/requirements.txt",
+        "python3 -m venv ./manipuladores_roboticos/.venv",
+        "source ./manipuladores_roboticos/.venv/bin/activate && pip install --upgrade pip && pip install -r ./manipuladores_roboticos/requirements.txt"
+    ]
 }

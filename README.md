@@ -3,6 +3,7 @@
 ## Disciplinas
 Atualmente, este repositório contém os submódulos para as seguintes disciplinas:
 - [ELT-015: Laboratório de Controle e Automação II](https://github.com/eduardo-ufmg/lab2/)
+- [ELE-041: Manipuladores Robóticos](https://github.com/eduardo-ufmg/manipuladores_roboticos/)
 
 ## Configuração do Ambiente de Desenvolvimento
 
