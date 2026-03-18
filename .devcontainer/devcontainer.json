@@ -16,9 +16,23 @@
         "git submodule add https://github.com/eduardo-ufmg/manipuladores_roboticos.git",
         "git submodule init --recursive",
         "git submodule update --recursive",
-        "python3 -m venv ./lab2/.venv",
-        "source ./lab2/.venv/bin/activate && pip install --upgrade pip && pip install -r ./lab2/requirements.txt",
-        "python3 -m venv ./manipuladores_roboticos/.venv",
-        "source ./manipuladores_roboticos/.venv/bin/activate && pip install --upgrade pip && pip install -r ./manipuladores_roboticos/requirements.txt"
+        "cd lab2",
+        "python3 -m venv .venv",
+        "source .venv/bin/activate",
+        "pip install --upgrade pip",
+        "pip install -r requirements.txt",
+        "pre-commit install",
+        "pre-commit autoupdate",
+        "pre-commit run --all-files",
+        "deactivate && cd ..",
+        "cd manipuladores_roboticos",
+        "python3 -m venv .venv",
+        "source .venv/bin/activate",
+        "pip install --upgrade pip",
+        "pip install -r requirements.txt",
+        "pre-commit install",
+        "pre-commit autoupdate",
+        "pre-commit run --all-files",
+        "deactivate && cd .."
     ]
 }
