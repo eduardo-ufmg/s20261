@@ -10,4 +10,7 @@ RUN apt update && apt -y install \
     python3 \
     python3-venv \
     python3-pip \
+    build-essential \
+    gfortran \
+    liblapack-dev \
     && apt clean && rm -rf /var/lib/apt/lists/*
